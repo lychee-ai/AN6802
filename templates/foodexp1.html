@@ -1,0 +1,24 @@
+<head>
+    <meta name="viewport" content="width=device-width",initial-scale="1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+</head>
+
+<body>
+    <div class="container">
+        <h2>Predict Food Expenditure</h2>
+        <input type="number" id = "salary" placeholder="salary">
+        <button class="btn" onclick="predictExp()">Enter</button>
+        <p id="foodExp"></p>
+        <form action="/main" method="POST">
+            <input type="submit" value="Main">
+        </form>
+    </div>
+</body>
+<script src="{{url_for('static',filename='foodexp.js')}}">
+    // function predictExp(){
+    //     const salary = document.getElementById("salary").value;
+    //     console.log(salary)
+    //     let foodExp = salary * 0.4851 + 147.4;
+    //     document.getElementById("foodExp").innerText = "Predicted food expenditure: " + foodExp;
+    // }
+</script>
